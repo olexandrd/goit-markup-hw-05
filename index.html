@@ -445,6 +445,74 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="modal-content">
+          <h2 class="modal-title">
+            Leave your contacts and we will call you back
+          </h2>
+          <form class="backdrop-form">
+            <label for="name" class="backdrop-form-label">
+              <div class="backdrop-form-section">
+                Name
+                <svg class="input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+                <input
+                  name="name"
+                  id="name-input"
+                  type="text"
+                  class="backdrop-form-input"
+                />
+              </div>
+            </label>
+            <label for="phone" class="backdrop-form-label">
+              <div class="backdrop-form-section">
+                Phone
+                <svg class="input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+                <input name="phone" type="tel" class="backdrop-form-input" />
+              </div>
+            </label>
+            <label for="email" class="backdrop-form-label">
+              <div class="backdrop-form-section">
+                Email
+                <svg class="input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+                <input name="email" type="email" class="backdrop-form-input" />
+              </div>
+            </label>
+            <label for="comment" class="backdrop-form-label">
+              <div class="backdrop-form-section">
+                Comment
+                <textarea
+                  name="comment"
+                  class="backdrop-form-input backdrop-form-text-input"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+            </label>
+
+            <div class="backdrop-form-section backdrop-agreement">
+              <input type="checkbox" id="customCheckbox" hidden />
+              <label for="customCheckbox" class="checkbox-custom">
+                <svg class="icon-unchecked" width="16" height="16">
+                  <use href="./images/icons.svg#icon-checkbox-default"></use>
+                </svg>
+                <svg class="icon-checked" width="16" height="16">
+                  <use href="./images/icons.svg#icon-checkbox-click"></use>
+                </svg>
+              </label>
+              <p>
+                I accept the terms and conditions of the
+                <span class="backdrop-agreement-link">Privacy Policy</span>
+              </p>
+            </div>
+            <div class="backdrop-btn-wrapper">
+              <button class="backdrop-btn btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
