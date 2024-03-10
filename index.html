@@ -450,7 +450,7 @@
             Leave your contacts and we will call you back
           </h2>
           <form class="backdrop-form">
-            <label for="name" class="backdrop-form-label">
+            <label for="name-input" class="backdrop-form-label">
               <div class="backdrop-form-section">
                 Name
                 <svg class="input-icon" width="24" height="24">
@@ -464,29 +464,40 @@
                 />
               </div>
             </label>
-            <label for="phone" class="backdrop-form-label">
+            <label for="phone-input" class="backdrop-form-label">
               <div class="backdrop-form-section">
                 Phone
                 <svg class="input-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-phone-black"></use>
                 </svg>
-                <input name="phone" type="tel" class="backdrop-form-input" />
+                <input
+                  name="phone"
+                  id="phone-input"
+                  type="tel"
+                  class="backdrop-form-input"
+                />
               </div>
             </label>
-            <label for="email" class="backdrop-form-label">
+            <label for="email-input" class="backdrop-form-label">
               <div class="backdrop-form-section">
                 Email
                 <svg class="input-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-email-black"></use>
                 </svg>
-                <input name="email" type="email" class="backdrop-form-input" />
+                <input
+                  name="email"
+                  id="email-input"
+                  type="email"
+                  class="backdrop-form-input"
+                />
               </div>
             </label>
-            <label for="comment" class="backdrop-form-label">
+            <label for="comment-textarea" class="backdrop-form-label">
               <div class="backdrop-form-section">
                 Comment
                 <textarea
                   name="comment"
+                  id="comment-textarea"
                   class="backdrop-form-input backdrop-form-text-input"
                   placeholder="Text input"
                 ></textarea>
