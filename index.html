@@ -446,9 +446,9 @@
           </svg>
         </button>
         <div class="modal-content">
-          <h2 class="modal-title">
+          <p class="modal-title">
             Leave your contacts and we will call you back
-          </h2>
+          </p>
           <form class="backdrop-form">
             <label for="name-input" class="backdrop-form-label">
               Name
@@ -486,14 +486,19 @@
                 class="backdrop-form-input"
               />
             </label>
-            <label for="comment-textarea" class="backdrop-form-label">
+            <label
+              for="comment-textarea"
+              class="backdrop-form-label backdrop-form-textarea-label"
+            >
               Comment
               <textarea
                 name="comment"
                 id="comment-textarea"
                 class="backdrop-form-input backdrop-form-text-input"
                 placeholder="Text input"
-              ></textarea>
+                resize="none"
+              >
+              </textarea>
             </label>
 
             <div class="backdrop-form-label backdrop-agreement">
@@ -511,9 +516,7 @@
                 <span class="backdrop-agreement-link">Privacy Policy</span>
               </p>
             </div>
-            <div class="backdrop-btn-wrapper">
-              <button class="backdrop-btn btn" type="submit">Send</button>
-            </div>
+            <button class="backdrop-btn btn" type="submit">Send</button>
           </form>
         </div>
       </div>

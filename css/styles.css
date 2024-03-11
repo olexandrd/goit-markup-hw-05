@@ -48,6 +48,15 @@ img {
     height: auto;
 }
 
+textarea {
+    resize: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -253,7 +262,7 @@ img {
 
 .footer-social-list {
     display: flex;
-    gap: var(--intendance);
+    gap: 16px;
     justify-content: center;
 }
 
@@ -657,7 +666,6 @@ img {
 .backdrop-form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     width: 100%;
     font-weight: 400;
     font-size: 12px;
@@ -674,6 +682,11 @@ img {
     width: 100%;
     position: relative;
     transition: fill var(--transform-properties);
+    margin-bottom: 8px;
+}
+
+.backdrop-form-textarea-label {
+    margin-bottom: 16px;
 }
 
 .backdrop-form-input {
@@ -698,6 +711,7 @@ img {
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    margin-bottom: 24px;
 }
 
 .backdrop-agreement-link {
@@ -705,15 +719,6 @@ img {
     line-height: 1.33333;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-
-}
-
-.backdrop-btn-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0;
-
 }
 
 .backdrop-btn {
@@ -730,6 +735,7 @@ img {
     font-weight: 500;
     color: var(--white-cl);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    margin: 0 auto 24px auto;
 }
 
 .backdrop-btn:hover,
